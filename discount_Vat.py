@@ -5,7 +5,7 @@ discount = st.number_input("กรอกส่วนลด (%):", min_value=0.0 
 discount_price = fullprice * discount/100
 discount = fullprice - discount_price
 vat = discount * 0.07
-net_price = fullprice - discount_price + vat
+net_price = fullprice - after_discount + vat
 
 st.divider()#เส้นคั่นแบ่งสัดส่วนให้สวยงาม
 
