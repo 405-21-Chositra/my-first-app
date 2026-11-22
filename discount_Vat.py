@@ -11,7 +11,7 @@ st.divider()#เส้นคั่นแบ่งสัดส่วนให้�
 
 st.write(f"● ส่วนลด ({discount}%): -{discount_price:.2f} บาท")
 st.write(f"● ราคาหลังหักส่วนลด: {discount_price:.2f} บาท")
-st.write(f"● ภาษีมูลค่าเพิ่ม (VAT 7%): **{vat:.2f}** บาท")
+st.write(f"● ภาษีมูลค่าเพิ่ม (VAT 7%): +**{vat:.2f}** บาท")
 
 st.header(f"● ราคาสุทธิที่ต้องจ่าย : {net_price:.2f} บาท")
 
