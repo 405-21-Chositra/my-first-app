@@ -9,7 +9,7 @@ net_price = fullprice - discount_price + vat
 
 st.divider()#เส้นคั่นแบ่งสัดส่วนให้สวยงาม
 
-st.write(f"● ส่วนลด ({discount}%): -{discount_price:.2f} บาท")
+st.write(f"● ส่วนลด ({discoun_percent:.1f}%): -{discount_price:.2f} บาท")
 st.write(f"● ราคาหลังหักส่วนลด: {discount_price:.2f} บาท")
 st.write(f"● ภาษีมูลค่าเพิ่ม (VAT 7%): +**{vat:.2f}** บาท")
 
