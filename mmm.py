@@ -1,0 +1,20 @@
+import streamlit as st
+st.title("🧾แอปคำนวณส่วนลดและ VAT 7%")
+
+fullprice = st.number_input("กรอกราคาเต็มของสินค้า (บาท):", min_value=0.0 , value=0.0)
+discount = st.number_input("กรอกส่วนลด (%):", min_value=0.0 , max_value=100.0 , value=0.0)
+
+discount_price = fullprice * discount/100
+after_discount = fullprice - discount_price
+vat = after_discount * 0.07
+net_price = after_discount + vat
+
+st.divider()
+
+st.write(f"● ส่วนลด ({discount}%): -{discount_price:.2f} บาท")
+st.write(f"● ราคาหลังหักส่วนลด: {after_discount:.2f} บาท")
+st.write(f"● ภาษีมูลค่าเพิ่ม (VAT 7%): +**{vat:.2f}** บาท")
+
+st.header(f"● ราคาสุทธิที่ต้องจ่าย : {net_price:.2f} บาท")
+
+st.divider()
