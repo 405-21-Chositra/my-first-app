@@ -13,7 +13,7 @@ st.write(f"● ส่วนลด ({discount}%): -{discount_price:.2f} บาท
 st.write(f"● ราคาหลังหักส่วนลด: {discount_price:.2f} บาท")
 st.write(f"● ภาษีมูลค่าเพิ่ม (VAT 7%): **{vat:.2f}** บาท")
 
-st.header(f"● ราคาสุทธิ : {net_price:.2f} บาท")
+st.header(f"● ราคาสุทธิที่ต้องจ่าย : {net_price:.2f} บาท")
 
 st.divider()#เส้นคั่นแบ่งสัดส่วนให้สวยงาม
 st.write("นางสาวโชศิตรา ดีวงค์ เลขที่ 21 ม.4/5")
